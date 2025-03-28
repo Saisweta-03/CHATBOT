@@ -1,0 +1,196 @@
+.sexual-health-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Main heading */
+  .sexual-health-container h1 {
+    font-size: 2.5rem;
+    color: #6A1B9A; /* Deep purple for sensitivity */
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section headings */
+  .sexual-health-container h2 {
+    font-size: 1.8rem;
+    color: #6A1B9A;
+    border-bottom: 3px solid #AB47BC; /* Lighter purple accent */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .sexual-health-container h3 {
+    font-size: 1.4rem;
+    color: #8E24AA; /* Medium purple */
+  }
+  
+  .sexual-health-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6A1B9A;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs and lists */
+  .sexual-health-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .sexual-health-container ul {
+    padding-left: 25px;
+  }
+  
+  .sexual-health-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .sexual-health-container li:hover {
+    transform: translateX(8px);
+    color: #AB47BC;
+  }
+  
+  /* Image styling */
+  .sexual-health-container .sexual-health-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Boxed sections */
+  .sexual-health-container .content-wrapper,
+  .sexual-health-container section,
+  .sexual-health-container .contents-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sexual-health-container .content-wrapper:hover,
+  .sexual-health-container section:hover,
+  .sexual-health-container .contents-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Individual condition boxes */
+  .sexual-health-container .condition {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Links */
+  .sexual-link {
+    color: #6A1B9A;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .sexual-link:hover {
+    color: #CE93D8; /* Lighter purple for hover */
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .sexual-health-container {
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  
+    .sexual-health-container h1 {
+      font-size: 2.3rem;
+      padding: 12px 18px;
+    }
+  
+    .sexual-health-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .sexual-health-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .sexual-health-container p,
+    .sexual-health-container li {
+      font-size: 1rem;
+    }
+  
+    .sexual-health-container h4 {
+      font-size: 1.4rem;
+    }
+  
+    .sexual-health-container .sexual-health-image {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sexual-health-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .sexual-health-container h1 {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  
+    .sexual-health-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .sexual-health-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .sexual-health-container p,
+    .sexual-health-container li {
+      font-size: 0.95rem;
+    }
+  
+    .sexual-health-container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .sexual-health-container .sexual-health-image {
+      width: 60%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .sexual-health-container .content-wrapper,
+    .sexual-health-container section,
+    .sexual-health-container .contents-section {
+      padding: 20px;
+    }
+  }

@@ -1,0 +1,196 @@
+.cardiac-care-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Main heading */
+  .cardiac-care-container h1 {
+    font-size: 2.5rem;
+    color: #4A2C2A;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section headings */
+  .cardiac-care-container h2 {
+    font-size: 1.8rem;
+    color: #4A2C2A;
+    border-bottom: 3px solid #E57373;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .cardiac-care-container h3 {
+    font-size: 1.4rem;
+    color: #5D4037;
+  }
+  
+  .cardiac-care-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4A2C2A;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs and lists */
+  .cardiac-care-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .cardiac-care-container ul {
+    padding-left: 25px;
+  }
+  
+  .cardiac-care-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .cardiac-care-container li:hover {
+    transform: translateX(8px);
+    color: #E57373;
+  }
+  
+  /* Image styling */
+  .cardiac-care-container .heart-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Boxed sections */
+  .cardiac-care-container .content-wrapper,
+  .cardiac-care-container section,
+  .cardiac-care-container .contents-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardiac-care-container .content-wrapper:hover,
+  .cardiac-care-container section:hover,
+  .cardiac-care-container .contents-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Individual condition boxes */
+  .cardiac-care-container .condition {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Links */
+  .cardiac-link {
+    color: #4A2C2A;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .cardiac-link:hover {
+    color: #EF9A9A;
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .cardiac-care-container {
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  
+    .cardiac-care-container h1 {
+      font-size: 2.3rem;
+      padding: 12px 18px;
+    }
+  
+    .cardiac-care-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .cardiac-care-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .cardiac-care-container p,
+    .cardiac-care-container li {
+      font-size: 1rem;
+    }
+  
+    .cardiac-care-container h4 {
+      font-size: 1.4rem;
+    }
+  
+    .cardiac-care-container .heart-image {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cardiac-care-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .cardiac-care-container h1 {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  
+    .cardiac-care-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .cardiac-care-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .cardiac-care-container p,
+    .cardiac-care-container li {
+      font-size: 0.95rem;
+    }
+  
+    .cardiac-care-container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .cardiac-care-container .heart-image {
+      width: 60%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .cardiac-care-container .content-wrapper,
+    .cardiac-care-container section,
+    .cardiac-care-container .contents-section {
+      padding: 20px;
+    }
+  }

@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color:   #55155d19; /* Matches App.css chatbot-toggle */
+  color: #f6e9e9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+} 
+
+.navbar-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: #0f0909;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #2b6cb0;
+  border-radius: 5px;
+  transform: translateY(-1px);
+}
+
+.navbar-links a.active {
+  background-color: #2b6cb0;
+  border-radius: 5px;
+}
+
+/* User info styling */
+.user-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.signout-btn {
+  background-color: #ffffff;
+  color: #3182ce;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.signout-btn:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .user-info {
+    flex-direction: column;
+  }
+
+  .user-info span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,200 @@
+/* ElderlyCare.css */
+
+/* Main container */
+.elderly-care-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  background-color: #fff8e1; /* Light warm beige for elderly care */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Main heading */
+.elderly-care-container h1 {
+  font-size: 2.5rem;
+  color: #f57c00; /* Warm orange for care and support */
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Section headings */
+.elderly-care-container h2 {
+  font-size: 1.8rem;
+  color: #f57c00;
+  border-bottom: 3px solid #ffcc80; /* Lighter orange accent */
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Subheadings */
+.elderly-care-container h3 {
+  font-size: 1.4rem;
+  color: #fb8c00; /* Medium orange */
+}
+
+.elderly-care-container h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f57c00;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs and lists */
+.elderly-care-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.elderly-care-container ul {
+  padding-left: 25px;
+}
+
+.elderly-care-container li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  list-style-type: disc;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.elderly-care-container li:hover {
+  transform: translateX(8px);
+  color: #ffcc80; /* Lighter orange on hover */
+}
+
+/* Image styling */
+.elderly-care-container .elderly-image {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Boxed sections */
+.elderly-care-container .content-wrapper,
+.elderly-care-container section,
+.elderly-care-container .contents-section {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elderly-care-container .content-wrapper:hover,
+.elderly-care-container section:hover,
+.elderly-care-container .contents-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Individual condition boxes */
+.elderly-care-container .condition {
+  background-color: #fefefe;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Links */
+.elderly-link {
+  color: #f57c00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.elderly-link:hover {
+  color: #ffe0b2; /* Very light orange for hover */
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .elderly-care-container {
+    width: 95%;
+    max-width: 1200px;
+    padding: 30px;
+  }
+
+  .elderly-care-container h1 {
+    font-size: 2.3rem;
+    padding: 12px 18px;
+  }
+
+  .elderly-care-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .elderly-care-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .elderly-care-container p,
+  .elderly-care-container li {
+    font-size: 1rem;
+  }
+
+  .elderly-care-container h4 {
+    font-size: 1.4rem;
+  }
+
+  .elderly-care-container .elderly-image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .elderly-care-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .elderly-care-container h1 {
+    font-size: 2rem;
+    padding: 10px 15px;
+  }
+
+  .elderly-care-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .elderly-care-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .elderly-care-container p,
+  .elderly-care-container li {
+    font-size: 0.95rem;
+  }
+
+  .elderly-care-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .elderly-care-container .elderly-image {
+    width: 60%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .elderly-care-container .content-wrapper,
+  .elderly-care-container section,
+  .elderly-care-container .contents-section {
+    padding: 20px;
+  }
+}

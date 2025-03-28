@@ -1,0 +1,196 @@
+.stomach-care-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Main heading */
+  .stomach-care-container h1 {
+    font-size: 2.5rem;
+    color: #F57C00; /* Deep orange for digestion */
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section headings */
+  .stomach-care-container h2 {
+    font-size: 1.8rem;
+    color: #F57C00;
+    border-bottom: 3px solid #FFB300; /* Lighter yellow-orange accent */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .stomach-care-container h3 {
+    font-size: 1.4rem;
+    color: #EF6C00; /* Medium orange */
+  }
+  
+  .stomach-care-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F57C00;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs and lists */
+  .stomach-care-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .stomach-care-container ul {
+    padding-left: 25px;
+  }
+  
+  .stomach-care-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .stomach-care-container li:hover {
+    transform: translateX(8px);
+    color: #FFB300;
+  }
+  
+  /* Image styling */
+  .stomach-care-container .stomach-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Boxed sections */
+  .stomach-care-container .content-wrapper,
+  .stomach-care-container section,
+  .stomach-care-container .contents-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stomach-care-container .content-wrapper:hover,
+  .stomach-care-container section:hover,
+  .stomach-care-container .contents-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Individual condition boxes */
+  .stomach-care-container .condition {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Links */
+  .stomach-link {
+    color: #F57C00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .stomach-link:hover {
+    color: #FFCA28; /* Lighter yellow for hover */
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .stomach-care-container {
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  
+    .stomach-care-container h1 {
+      font-size: 2.3rem;
+      padding: 12px 18px;
+    }
+  
+    .stomach-care-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .stomach-care-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .stomach-care-container p,
+    .stomach-care-container li {
+      font-size: 1rem;
+    }
+  
+    .stomach-care-container h4 {
+      font-size: 1.4rem;
+    }
+  
+    .stomach-care-container .stomach-image {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stomach-care-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .stomach-care-container h1 {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  
+    .stomach-care-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .stomach-care-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .stomach-care-container p,
+    .stomach-care-container li {
+      font-size: 0.95rem;
+    }
+  
+    .stomach-care-container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .stomach-care-container .stomach-image {
+      width: 60%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .stomach-care-container .content-wrapper,
+    .stomach-care-container section,
+    .stomach-care-container .contents-section {
+      padding: 20px;
+    }
+  }

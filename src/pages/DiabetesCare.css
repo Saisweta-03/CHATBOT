@@ -1,0 +1,196 @@
+.diabetes-care-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Main heading */
+  .diabetes-care-container h1 {
+    font-size: 2.5rem;
+    color: #2e7d32; /* Deep green for diabetes theme */
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section headings */
+  .diabetes-care-container h2 {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    border-bottom: 3px solid #66bb6a; /* Lighter green accent */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .diabetes-care-container h3 {
+    font-size: 1.4rem;
+    color: #388e3c; /* Medium green */
+  }
+  
+  .diabetes-care-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs and lists */
+  .diabetes-care-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .diabetes-care-container ul {
+    padding-left: 25px;
+  }
+  
+  .diabetes-care-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .diabetes-care-container li:hover {
+    transform: translateX(8px);
+    color: #66bb6a;
+  }
+  
+  /* Image styling */
+  .diabetes-care-container .diabetes-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Boxed sections */
+  .diabetes-care-container .content-wrapper,
+  .diabetes-care-container section,
+  .diabetes-care-container .contents-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .diabetes-care-container .content-wrapper:hover,
+  .diabetes-care-container section:hover,
+  .diabetes-care-container .contents-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Individual condition boxes */
+  .diabetes-care-container .condition {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Links */
+  .diabetes-link {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .diabetes-link:hover {
+    color: #81c784; /* Lighter green for hover */
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .diabetes-care-container {
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  
+    .diabetes-care-container h1 {
+      font-size: 2.3rem;
+      padding: 12px 18px;
+    }
+  
+    .diabetes-care-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .diabetes-care-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .diabetes-care-container p,
+    .diabetes-care-container li {
+      font-size: 1rem;
+    }
+  
+    .diabetes-care-container h4 {
+      font-size: 1.4rem;
+    }
+  
+    .diabetes-care-container .diabetes-image {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .diabetes-care-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .diabetes-care-container h1 {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  
+    .diabetes-care-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .diabetes-care-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .diabetes-care-container p,
+    .diabetes-care-container li {
+      font-size: 0.95rem;
+    }
+  
+    .diabetes-care-container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .diabetes-care-container .diabetes-image {
+      width: 60%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .diabetes-care-container .content-wrapper,
+    .diabetes-care-container section,
+    .diabetes-care-container .contents-section {
+      padding: 20px;
+    }
+  }

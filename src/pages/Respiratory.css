@@ -1,0 +1,126 @@
+.respiratory-care-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .respiratory-care-container h1 {
+    font-size: 2.5rem;
+    color: #1e90ff; /* Bright blue for respiratory theme */
+    margin-bottom: 20px;
+  }
+  
+  .respiratory-care-container h2 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+    border-bottom: 2px solid #87ceeb; /* Light blue underline */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .respiratory-care-container h3 {
+    font-size: 1.4rem;
+    color: #4682b4;
+  }
+  
+  .respiratory-care-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e90ff;
+    margin-bottom: 10px;
+  }
+  
+  .respiratory-care-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .respiratory-care-container ul {
+    padding-left: 25px;
+  }
+  
+  .respiratory-care-container li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .respiratory-care-container li:hover {
+    transform: translateX(5px);
+    color: #87ceeb;
+  }
+  
+  .respiratory-care-container .respiratory-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .respiratory-care-container {
+      width: 95%;
+      max-width: 1200px;
+    }
+  
+    .respiratory-care-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .respiratory-care-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .respiratory-care-container p,
+    .respiratory-care-container li {
+      font-size: 1rem;
+    }
+  
+    .respiratory-care-container h4 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .respiratory-care-container {
+      width: 95%;
+      padding: 30px;
+    }
+  
+    .respiratory-care-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .respiratory-care-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .respiratory-care-container p,
+    .respiratory-care-container li {
+      font-size: 0.95rem;
+    }
+  
+    .respiratory-care-container h4 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .respiratory-link {
+    color: #1e90ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .respiratory-link:hover {
+    color: #87ceeb;
+    text-decoration: underline;
+  }

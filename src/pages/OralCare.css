@@ -1,0 +1,196 @@
+.oral-care-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Main heading */
+  .oral-care-container h1 {
+    font-size: 2.5rem;
+    color: #00695C; /* Deep teal for oral hygiene */
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section headings */
+  .oral-care-container h2 {
+    font-size: 1.8rem;
+    color: #00695C;
+    border-bottom: 3px solid #4DB6AC; /* Lighter teal accent */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .oral-care-container h3 {
+    font-size: 1.4rem;
+    color: #00897B; /* Medium teal */
+  }
+  
+  .oral-care-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00695C;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs and lists */
+  .oral-care-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .oral-care-container ul {
+    padding-left: 25px;
+  }
+  
+  .oral-care-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .oral-care-container li:hover {
+    transform: translateX(8px);
+    color: #4DB6AC;
+  }
+  
+  /* Image styling */
+  .oral-care-container .oral-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Boxed sections */
+  .oral-care-container .content-wrapper,
+  .oral-care-container section,
+  .oral-care-container .contents-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .oral-care-container .content-wrapper:hover,
+  .oral-care-container section:hover,
+  .oral-care-container .contents-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Individual condition boxes */
+  .oral-care-container .condition {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Links */
+  .oral-link {
+    color: #00695C;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .oral-link:hover {
+    color: #80CBC4; /* Lighter teal for hover */
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .oral-care-container {
+      width: 95%;
+      max-width: 1200px;
+      padding: 30px;
+    }
+  
+    .oral-care-container h1 {
+      font-size: 2.3rem;
+      padding: 12px 18px;
+    }
+  
+    .oral-care-container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .oral-care-container h3 {
+      font-size: 1.6rem;
+    }
+  
+    .oral-care-container p,
+    .oral-care-container li {
+      font-size: 1rem;
+    }
+  
+    .oral-care-container h4 {
+      font-size: 1.4rem;
+    }
+  
+    .oral-care-container .oral-image {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .oral-care-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .oral-care-container h1 {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  
+    .oral-care-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .oral-care-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .oral-care-container p,
+    .oral-care-container li {
+      font-size: 0.95rem;
+    }
+  
+    .oral-care-container h4 {
+      font-size: 1.3rem;
+    }
+  
+    .oral-care-container .oral-image {
+      width: 60%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .oral-care-container .content-wrapper,
+    .oral-care-container section,
+    .oral-care-container .contents-section {
+      padding: 20px;
+    }
+  }
