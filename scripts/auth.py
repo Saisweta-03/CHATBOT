@@ -5,9 +5,21 @@ from passlib.context import CryptContext
 from typing import Optional
 import jwt
 from datetime import datetime, timedelta
+from fastapi.middleware.cors import CORSMiddleware
 
 # Initialize FastAPI app
 app = FastAPI(title="Authentication API")
+
+origins = [
+    "http://localhost:5173",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 # MongoDB connection (Using MongoDB Atlas)
 client = MongoClient("mongodb+srv://swetasai003:OHNc32cZVHz8dMKN@cluster0.eyvwkix.mongodb.net/?retryWrites=true&w=majority")

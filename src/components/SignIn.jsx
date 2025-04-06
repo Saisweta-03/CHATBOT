@@ -1,26 +1,36 @@
 import React, { useState } from 'react';
 import './SignIn.css';
 import { useNavigate,Link } from 'react-router-dom';
+import axios from "axios";
+import {useAuth} from "../context/AuthContext"
 
 const SignIn = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
-  const handleSubmit = (e) => {
+  const {login} = useAuth();
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) {
       setError('All fields are required!');
       return;
     }
-
-    // Dummy Authentication
-    if (email === 'user@example.com' && password === 'password123') {
-      alert('Login Successful!');
-      navigate('/');
-    } else {
-      setError('Invalid Email or Password');
+    const payload = {
+      email,
+      password
+    }
+    try {
+      const response = await axios.post("http://localhost:8001/signin",payload)
+      if (response?.status === 200) {
+        login({email, password})
+        alert('Login Successful!');
+        navigate('/');
+      } else {
+        alert('Invalid Email or Password');
+      }
+    } catch (error) {
+      alert("Failed to signin")
     }
   };
 

@@ -1,10 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ user, setUser }) => {
+const Navbar = () => {
+    let navigate = useNavigate();
+  
+  const {user,isAuthenticated,logout } =useAuth();
   const handleSignOut = () => {
-    setUser(null); // Clear user on sign-out
+    logout()
+    return navigate("/signin");
+
   };
 
   return (
@@ -13,9 +20,9 @@ const Navbar = ({ user, setUser }) => {
         <h2>MediHub</h2>
       </div>
       <ul className="navbar-links">
-        {user ? (
+        {isAuthenticated ? (
           <li className="user-info">
-            <span>Welcome, {user}</span>
+            <span>Welcome, {user.email}</span>
             <button className="signout-btn" onClick={handleSignOut}>
               Sign Out
             </button>

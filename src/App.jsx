@@ -16,6 +16,7 @@ import ColdImmune from "./pages/ColdImmune";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import AIChatModal from "./components/AIChatModal";
+import { AuthProvider } from "./context/AuthContext";
 import "./App.css";
 
 const MainLayout = () => {
@@ -52,21 +53,20 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app-container">
-      <Router>
-        <MainLayout />
-        {showChat ? (
-          <AIChatModal onClose={() => setShowChat(false)} />
-        ) : (
-          <button
-            className="chatbot-toggle"
-            onClick={() => setShowChat(true)}
-          >
-            Chat with Medibot 💬
-          </button>
-        )}
-      </Router>
-    </div>
+    <AuthProvider>
+      <div className="app-container">
+        <Router>
+          <MainLayout />
+          {showChat ? (
+            <AIChatModal onClose={() => setShowChat(false)} />
+          ) : (
+            <button className="chatbot-toggle" onClick={() => setShowChat(true)}>
+              Chat with Medibot 💬
+            </button>
+          )}
+        </Router>
+      </div>
+    </AuthProvider>
   );
 };
 

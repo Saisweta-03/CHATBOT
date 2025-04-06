@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import bgImage from "../assets/bg.jpg"; 
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 const Container = styled.div`
   display: flex;
@@ -61,13 +64,28 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [ email, setEmail] = useState("");
+  const [ name, setName] = useState("");
+  const [ number, setNumber] = useState("");
+  const [address , setAddress] = useState("");
+    let navigate = useNavigate();
 
-  const handleSignUp = () => {
+  const handleSignUp = async () => {
     if (password !== confirmPassword) {
       setPasswordError("Passwords do not match!");
     } else {
+      const payload = {
+        name,
+        email,
+        address,
+        phone:number,
+        username: email,
+        password
+      }
+      const response = await axios.post("http://localhost:8001/signup",payload)
       setPasswordError("");
       alert("Account created successfully!");
+      return navigate("/signin");
     }
   };
 
@@ -75,12 +93,12 @@ const SignUp = () => {
     <Container>
       <FormWrapper>
         <Title>Create Account</Title>
-        <Input type="text" placeholder="Name" />
-        <Input type="text" placeholder="Address" />
-        <Input type="email" placeholder="Enter your email address" />
-        <Input type="tel" placeholder="Enter your phone number" />
+        <Input onChange={(e)=> setName(e.target.value)} value={name} type="text" placeholder="Name" />
+        <Input onChange={(e)=> setAddress(e.target.value)} value={address} type="text" placeholder="Address" />
+        <Input onChange={(e)=> setEmail(e.target.value)} value={email} type="email" placeholder="Enter your email address" />
+        <Input onChange={(e)=> setNumber(e.target.value)} value={number} type="tel" placeholder="Enter your phone number" />
 
-        <Input
+        <Input 
           type="password"
           placeholder="Enter your password"
           value={password}

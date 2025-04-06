@@ -4,9 +4,21 @@ import re
 import csv
 from concurrent.futures import ThreadPoolExecutor
 from typing import List, Tuple, Dict
+from fastapi.middleware.cors import CORSMiddleware
 
 # Initialize FastAPI app
 app = FastAPI(title="MedQuadAD + Medicine Chatbot")
+
+origins = [
+    "http://localhost:5173",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 # Diabetes-related medicines from medicine_details.csv
 DIABETES_MEDS = [
